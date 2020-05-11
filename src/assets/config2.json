@@ -1,0 +1,53 @@
+{
+    "model": {
+        "firstname": "Aritra",
+        "lastname": "Koley",
+        "age": 25,
+        "desig": "qa"
+    },
+    "fields": [
+        {
+            "key": "firstname",
+            "type": "input",
+            "templateOptions": {
+                "label": "Firstname"
+            }
+        },
+        {
+            "key": "lastname",
+            "type": "input",
+            "templateOptions": {
+                "label": "Lastname"
+            }
+        },
+        {
+            "key": "age",
+            "type": "input",
+            "templateOptions": {
+                "type": "number",
+                "label": "Age"
+            }
+        },
+        {
+            "key": "desig",
+            "type": "select",
+            "templateOptions": {
+                "label": "Designation",
+                "options": [
+                    {
+                        "value": "dev",
+                        "label": "Developer"
+                    },
+                    {
+                        "value": "qa",
+                        "label": "Quality Assuarance"
+                    },
+                    {
+                        "value": "mng",
+                        "label": "Manager"
+                    }
+                ]
+            }
+        }
+    ]
+}

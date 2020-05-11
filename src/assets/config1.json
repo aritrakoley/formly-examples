@@ -1,0 +1,33 @@
+{
+    "model": {
+        "name": "Aritra",
+        "age": 25,
+        "email": "aritra.koley@gmail.com"
+    },
+
+    "fields": [
+        {
+            "key": "name",
+            "type": "input",
+            "templateOptions": {
+                "label": "Name"
+            }
+        },
+        {
+            "key": "age",
+            "type": "input",
+            "templateOptions": {
+                "type": "number",
+                "label": "Age"
+            }
+        },
+        {
+            "key": "email",
+            "type": "input",
+            "templateOptions": {
+                "type": "email",
+                "label": "Email"
+            }
+        }
+    ]
+}

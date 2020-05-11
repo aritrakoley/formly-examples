@@ -1,0 +1,29 @@
+<div class="container">
+    <h4>Custom Form</h4>
+    <form [formGroup] =  "form" (ngSubmit) = "onSubmit(form)">
+        
+        <formly-form
+            [model]="model"
+            [fields]="fields"
+            [form]="form"
+        >
+        </formly-form>
+    
+        <button type="reset" class="btn btn-dark mr-1">Clear</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+    
+        <hr>
+    
+        Form Value:
+        <code>
+            {{ form.value | json }}
+        </code>
+        <br>
+        Model Value:
+        <code>
+            {{ model | json }}
+        </code>
+    
+    </form>
+    <button class="btn btn-secondary" (click)="switchConfig()">Switch</button>
+</div>
